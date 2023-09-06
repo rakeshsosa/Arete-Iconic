@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- was: <?xml version="1.0" encoding="UTF-8"?> -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd 
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+    <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/>
+    
+    <!--
+    Most controllers will use the ControllerClassNameHandlerMapping above, but
+    for the index controller we are using ParameterizableViewController, so we must
+    define an explicit mapping for it.
+    -->
+    <bean id="userController" class="tenant.controller.UserController"></bean>
+    <bean id="masterController" class="tenant.controller.MasterController"></bean>
+    <bean id="tenantController" class="tenant.controller.TenantController"></bean>
+    <bean id="contractController" class="tenant.controller.ContractController"></bean>
+    <bean id="crmController" class="tenant.controller.CrmController"></bean>
+    <bean id="cmController" class="tenant.controller.CampaignMediaController"></bean>
+    <bean id="assetDetailsController" class="tenant.controller.AssetDetailsController"></bean>
+    <bean id="reportController" class="tenant.controller.ReportController"></bean>
+<bean id="qualityController" class="tenant.controller.QualityController"></bean>
+    <bean id="serviceRequestController" class="tenant.controller.ServiceRequestController"></bean>
+    <bean id="assetsController1" class="tenant.controller.AssetsController"></bean>
+    <bean id="purchaseDetailsController" class="tenant.controller.PurchaseDetailsController"></bean>
+    <bean id="dashboardController" class="tenant.controller.DashboardController"></bean>
+
+    <bean id="utilityDetailsController" class="tenant.controller.UtilityDetailsController"></bean>  
+    <bean id="invoiceController" class="tenant.controller.InvoiceController"></bean>  
+    <bean id="tenantPortalController" class="tenant.controller.TenantPortalController"></bean>  
+    <bean id="financeController" class="tenant.controller.FinanceController"></bean>
+    <bean id="reportDetailsController" class="tenant.controller.ReportDetailsController"></bean>
+    
+    <!--    <bean id="amcMaintenanceController" class="tenant.controller.AMCMaintenanceController"></bean>-->
+   
+    <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="urlMap">
+            <map>
+                <entry key="/login/*.htm">
+                    <ref bean="userController"/>
+                </entry>
+                <entry key="/master/*.htm">
+                    <ref bean="masterController"/>
+                </entry>                
+                <entry key="/CRM/*.htm">
+                    <ref bean="crmController"/>
+                </entry>                
+                <entry key="/Lead/*.htm">
+                    <ref bean="crmController"/>
+                </entry>                
+                <entry key="/MediaMaster/*.htm">
+                    <ref bean="crmController"/>
+                </entry>                
+                <entry key="/tenant/*.htm">
+                    <ref bean="tenantController"/>
+                </entry> 
+                <entry key="/insurance/*.htm">
+                    <ref bean="contractController"/>
+                </entry>  
+                <entry key="/assets/*.htm">
+                    <ref bean="assetDetailsController"/>
+                </entry>    
+                <entry key="/reports/*.htm">
+                    <ref bean="reportController"/>
+                </entry>    
+              <entry key="/quality/*.htm">
+                    <ref bean="qualityController"/>
+                </entry> 
+                <entry key="/assetsm/*.htm">                        
+                    <ref bean="assetsController1"/>
+                </entry> 
+                <entry key="/serviceReq/*.htm">
+                    <ref bean="serviceRequestController"/>
+                </entry>         
+                <entry key="/purchase/*.htm">
+                    <ref bean="purchaseDetailsController"/>
+                </entry>     
+                <entry key="/dashboard/*.htm">
+                    <ref bean="dashboardController"/>
+                </entry>  
+                <entry key="/utility/*.htm">
+                    <ref bean="utilityDetailsController"/>
+                </entry>  
+                <entry key="/invoice/*.htm">
+                    <ref bean="invoiceController"/>
+                </entry>  
+                <entry key="/tenantPortal/*.htm">
+                    <ref bean="tenantController"/>
+                </entry>  
+                
+                <entry key="/AMC/*.htm">
+                    <ref bean="crmController"/>
+                </entry>
+                <entry key="/finance/*.htm">
+                    <ref bean="tenantController"/>
+                </entry>
+                
+                <entry key="/management/*.htm">
+                    <ref bean="tenantController"/>
+                </entry>
+                
+                <entry key="/management/*.htm">
+                    <ref bean="tenantController"/>
+                </entry>
+                
+                <entry key="/taxManager/*.htm">
+                    <ref bean="tenantController"/>
+                </entry>
+                
+                 <entry key="/finance/*.htm">
+                    <ref bean="financeController"/>
+                </entry>
+                
+                <entry key="/jasperReport/*.htm">
+                    <ref bean="reportDetailsController"/>
+                </entry>
+                
+            </map>
+        </property>
+    </bean>
+
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass">
+            <value>org.springframework.web.servlet.view.JstlView</value>
+        </property>
+        <property name="prefix" value=""></property>
+        <property name="suffix">
+            <value>.jsp</value>
+        </property>
+        <property name="order">
+            <value>1</value>
+        </property>
+    </bean>
+     
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="52428800" />
+    </bean>
+
+    <!--
+    The index controller.
+    -->
+    <context:component-scan base-package="tenant.*"/>
+</beans>

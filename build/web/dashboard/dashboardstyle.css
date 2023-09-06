@@ -1,0 +1,172 @@
+/*canvas.canvasjs-chart-canvas {
+        width: 603px; 
+    width: 100%;
+}*/
+.assetStyle {
+    width: 100%;
+    border: 2px solid #439AB1;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: white;
+
+}
+.tenantStyle {
+    width: 100%;
+    border: 2px solid #439AB1;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: white;
+
+}
+
+.contractStyle {
+    width: 100%; 
+    border: 2px solid #439AB1;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: white;
+
+}
+.crmStyle {
+    width: 100%; 
+    border: 2px solid #439AB1;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: white;
+
+}
+.inventoryStyle {
+    width: 100%; 
+    border: 2px solid #439AB1;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: white;
+
+}
+.purchseStyle {
+    width: 100%; 
+    border: 2px solid #439AB1;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: white;
+
+}
+/*.count.green,.count.blue,.count.purple {
+  position: relative;
+  display: inline-block;
+  
+}*/
+.count.green:before {
+    content: " ";
+    width: 0; height: 0;
+    border-bottom: 30px solid #64C7CC;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    position: absolute;
+    top: -30px;
+    left: 0;
+}
+.count.purple:before {
+    content: " ";
+    width: 0; height: 0;
+    border-bottom: 30px solid #64C7CC;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    position: absolute;
+    top: -30px;
+    left: 0;
+}
+.count.blue:before {
+    content: " ";
+    width: 0; height: 0;
+    border-bottom: 30px solid #64C7CC;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    position: absolute;
+    top: -30px;
+    left: 0;
+}
+.count.green {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 104px;
+    height: 60px;
+    background-color: #64C7CC;
+    position: relative;
+    text-align: center;
+}
+.count.blue {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 104px;
+    height: 60px;
+    background-color: #64C7CC;
+    position: relative;
+    text-align: center;
+}
+.count.purple {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 104px;
+    height: 60px;
+    background-color: #64C7CC;
+    position: relative;
+    text-align: center;
+}
+.count.green:after {
+    content: "";
+    width: 0; height: 0;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    border-top: 30px solid #64C7CC;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+}
+.count.blue:after {
+    content: "";
+    width: 0; height: 0;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    border-top: 30px solid #64C7CC;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+}
+.count.purple:after {
+    content: "";
+    width: 0; height: 0;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    border-top: 30px solid #64C7CC;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+}
+/*.hexagon {
+  position: relative;
+  width: 104px; 
+  height: 60.04px;
+  background-color: #64C7CC;
+  margin: 30.02px 0;
+}
+   
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 30.02px solid #64C7CC;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 30.02px solid #64C7CC;
+}*/

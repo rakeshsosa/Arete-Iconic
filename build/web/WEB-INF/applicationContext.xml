@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- was: <?xml version="1.0" encoding="UTF-8"?> -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd 
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+       
+    <bean id="userDAO" class="tenant.dao.UserDAO">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    <!--      Masters DAO          -->
+
+    <bean id="masterDAO" class="tenant.dao.MasterDAO">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+
+    <!--      TenantDetails DAO          -->
+    <bean id="tenantDetailsDAO" class="tenant.dao.TenantDetailsDAO">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    <!--      service Request DAO          -->
+    <bean id="serviceRequestDAO" class="tenant.dao.ServiceRequestDAO">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    
+    <!--      CONTRACT DAO          -->
+    
+    <bean id="contractDAO" class="tenant.dao.ContractDAO">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    
+    <bean id="cmDAO" class="tenant.dao.CampaignMediaDAO">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+
+    <bean id="crmDAO" class="tenant.dao.CrmDAO">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    <!--      assetDetails DAO          -->
+    <bean id="assetDAO" class="tenant.dao.AssetDAO">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    <bean id="reportDAO" class="tenant.dao.ReportDAO">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    <!--      END          -->
+    
+    <bean id="qualityDAO" class="tenant.dao.QualityDAO">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    
+    <bean id="purchaseDetailsDAO" class="tenant.dao.PurchaseDetailsDAO">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    
+    <!-- assets dao -->   
+    <bean id="assetsDAO1" class="tenant.dao.AssetsDAO">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean> 
+     
+    <!--      Dashboard DAO          -->
+    <bean id="dashboarddao" class="tenant.dao.DashboardDAO">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>  
+    
+        
+<!--                  TMC Type DAO          
+    <bean id="amctypedao" class="tenant.dao.AMCTypeDAO">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>  -->
+                    
+    
+    <bean id="utilityDetailsDAO" class="tenant.dao.UtilityDetailsDAO">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean> 
+    
+    <bean id="invoiceDAO" class="tenant.dao.InvoiceDAO">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    
+    <bean id="tenantPortalDAO" class="tenant.dao.TenantPortalDAO">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    
+    <bean id="financeDetailsDAO" class="tenant.dao.FinanceDetailsDAO">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean> 
+    
+    <bean id="repGenerationDAO" class="tenant.dao.RepGenerationDAO">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean> 
+    
+<!--     <bean id="amcMaintenancedao" class="tenant.dao.AMCMaintenanceDAO">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean> -->
+    
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">        
+        <property name="configLocations">
+            <list>
+                <value>classpath:hibernate.cfg.xml</value>
+            </list>
+        </property>
+    </bean>
+    
+   <context:component-scan base-package="tenant.*"/>
+</beans>

@@ -1,0 +1,2141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.0.final using JasperReports Library version 5.5.2  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CashFlow" pageWidth="595" pageHeight="1270" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="341dd268-48e2-42b7-bd0c-a8fc6af7571e">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[select * from arete_tms.report_sub_ledger]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="59" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="4" width="555" height="50" backcolor="#95B4D7" uuid="b8473147-6150-477a-9109-68f8e5035303">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="21" y="4" width="159" height="30" forecolor="#FFFFFF" uuid="e1ecaea4-eaca-41cb-9f74-e1f264ef04a1"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Company Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="34" width="150" height="20" forecolor="#FFFFFF" uuid="c6a174cf-12fb-43e4-93ea-233ef9e6ae45"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Address : Oman]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="422" y="14" width="129" height="30" forecolor="#FFFFFF" uuid="6d498f08-755a-4895-9cea-ff6fa76b7cf2"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cash Flow]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="1158" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<line>
+				<reportElement x="1" y="10" width="555" height="1" uuid="9ade4bbe-a910-460d-b7d6-9cc9065cfaf2">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="0" y="10" width="1" height="194" uuid="edd48b31-198f-44e8-9940-01e239d077dc">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="300" y="10" width="1" height="194" uuid="ea33190a-cccc-46f4-bebb-8f7f63fb4be8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="400" y="10" width="1" height="194" uuid="0cc2d162-7e64-45f7-9c75-da6aa4475f14">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="555" y="11" width="1" height="194" uuid="1298e360-0bfd-42f3-81e8-65c3895b0c8f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="20" y="10" width="1" height="194" uuid="d1715f23-8a43-41f7-99d1-1c9960a3049e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="190" y="10" width="1" height="194" uuid="8b3122f4-8ec6-4163-a4e4-2ac11b512413">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="0" y="34" width="555" height="1" uuid="4b13a4b1-d88a-49e4-9956-63fcbea3b03e">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="0" y="10" width="15" height="24" uuid="9f91db6c-8ea7-4106-8fd2-2b8f3f6a6469">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[A.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="10" width="160" height="24" uuid="4ae4e8b4-443b-486f-8c6e-2fd810ac37e4"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Inflow (Rental Income)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="10" width="100" height="24" uuid="063b144f-b76c-4247-8d69-c63816f658a6"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="310" y="10" width="90" height="24" uuid="f9b753aa-248c-4de9-9a89-71f48fd64cac"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="10" width="145" height="24" uuid="0f6cfec0-b7f4-471e-b7ee-8a5187f0e5a3"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Remarks]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="51" width="555" height="1" uuid="25fd7547-1884-4bcc-b7b5-1c74779629d3">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="1" y="35" width="15" height="15" uuid="365895ca-168f-4647-9ee8-6d01c058a045">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="35" width="160" height="15" uuid="baecddf5-bcc2-4020-b8ff-cf2c841363e8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="35" width="100" height="15" uuid="c5040da8-2081-4c3a-987b-94c22f881401">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="35" width="90" height="15" uuid="0ca48d2f-d812-4229-9f37-0b99248ab5ee">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="35" width="145" height="15" uuid="e6bd6fec-a1e9-46c0-9c4c-111ff163077c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[$0% Released]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="52" width="145" height="15" uuid="f132b8e8-60c0-4c49-9e51-67541866b787">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[$0% Released]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="52" width="90" height="15" uuid="4329aa88-b48f-4712-8e3a-4090655785bc">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="52" width="100" height="15" uuid="e8e5557e-2e54-4cbc-96c4-93ee8fbe8c2b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="52" width="160" height="15" uuid="2348073b-dea4-40fd-ac4e-93442c5c0bf5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="52" width="15" height="15" uuid="4d3c44a8-8b17-4af9-b5e6-96c347f83461">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[2]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="68" width="555" height="1" uuid="8437c8f8-229a-429f-bfc4-04b020b0516d">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="411" y="69" width="145" height="15" uuid="35a28345-c623-4fb9-9255-6f73f79449b0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[$0% Released]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="69" width="90" height="15" uuid="c7018426-659b-4760-aaa1-2bb6552544ed">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="69" width="100" height="15" uuid="bce6c61c-00ff-487c-894f-22757dcabfb9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="69" width="160" height="15" uuid="5220ee1e-cfbc-4776-aefe-20028e34c0ff">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="69" width="15" height="15" uuid="11fd6cc7-8e53-41b7-9cff-631f68a26c11">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[3]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="85" width="555" height="1" uuid="cd7da0f5-1636-4060-8de5-b8de61600a28">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="411" y="86" width="145" height="15" uuid="318a12ed-567f-4d80-b3e3-199c2c177963">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[$0% Released]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="86" width="90" height="15" uuid="f7045b6a-51b9-4992-84de-990fef702e6b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="86" width="100" height="15" uuid="8382816c-20e7-4716-8f1f-f382069f9203">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="86" width="160" height="15" uuid="a0828192-9657-4194-8b83-e5e95b8fe5cc">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="86" width="15" height="15" uuid="5436a31d-881a-4ac5-96d4-6dbf7b999039">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[4]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="102" width="555" height="1" uuid="6de6f224-cc09-4b3d-9c55-f12f304e5125">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="411" y="103" width="145" height="15" uuid="5fe0f949-1d69-4a60-8b3e-297df5d4b71b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[$0% Released]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="103" width="90" height="15" uuid="166fe59e-9a92-4f5c-a9b4-dd3af5992479">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="103" width="100" height="15" uuid="bd2ececb-1c25-477b-acea-ffdbea4ffe47">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="103" width="160" height="15" uuid="2042919b-f070-40bc-b816-85eb8304fb77">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="103" width="15" height="15" uuid="554c8a8a-0108-4c16-99e5-3ba7a28d285c">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[5]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="119" width="555" height="1" uuid="2f110fa8-11fc-421a-9a37-15b27152e73a">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="411" y="120" width="145" height="15" uuid="390a11b3-eb75-4273-a254-56232f4c04f1">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[$0% Released]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="120" width="90" height="15" uuid="ebf8adc5-bdb3-4b5f-815f-bc2a83533d5f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="120" width="100" height="15" uuid="598cec5e-0713-4afc-844e-f2c3ae007671">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="120" width="160" height="15" uuid="61e2901c-199b-4038-8f3d-816c9a4209c2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="120" width="15" height="15" uuid="76290cfc-1305-4aaa-b338-9bab1109c9db">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[6]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="136" width="555" height="1" uuid="4d242225-1f29-4044-81dd-fd2689010aa8">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="411" y="137" width="145" height="15" uuid="2a80b100-750e-434e-9664-9e903db5ee13">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[$0% Released]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="137" width="90" height="15" uuid="895dc981-e352-4318-a493-93d1c8ccf18d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="137" width="100" height="15" uuid="630b7c2e-7448-40cb-8b10-9cf86082cb07">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="137" width="160" height="15" uuid="9c371e13-50aa-4cde-bb89-c544cb9d0fcd">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="137" width="15" height="15" uuid="34e187a7-3817-4691-8053-6d0413d2dbec">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[7]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="153" width="555" height="1" uuid="4631b99f-cbac-4eca-9748-a1cd2bc5d1bc">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="411" y="154" width="145" height="15" uuid="b3e827c1-e65b-4902-a781-269c776c8a92">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[$0% Released]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="154" width="90" height="15" uuid="b8aba441-bb6b-43ff-991b-35740b1f5b95">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="154" width="100" height="15" uuid="5e283b3c-8102-4182-ae4f-6bcb927dce93">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="154" width="160" height="15" uuid="c99085f8-1bb2-4425-9b13-eaf33bfefeb7">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="154" width="15" height="15" uuid="8c8824b7-6bcc-4687-9b2f-7dfbef60f081">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[8]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="170" width="555" height="1" uuid="15e123bb-fefa-4818-b363-fdba9056e2b0">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="0" y="187" width="555" height="1" uuid="804d5b06-18e7-4d87-8cb6-becc8db4f29e">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="311" y="188" width="90" height="15" uuid="c3c2115a-8ef0-4b2c-bf66-0e919a3c1bb4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="188" width="100" height="15" uuid="64e0dfb6-daca-4069-a801-9a050c855caa">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="188" width="160" height="15" uuid="8b685fa0-f3d4-4d4d-b32c-62b851b4d8b7">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Inflow(A)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="204" width="555" height="1" uuid="bffc8ad9-3b32-4cfc-bebb-d70149910c02">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="1" y="217" width="555" height="1" uuid="7b2cc0cc-9add-441c-9f44-00ec48ee0853">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="300" y="217" width="1" height="901" uuid="457ab699-b5e4-4a9c-8fef-c1b336c9d89f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="400" y="217" width="1" height="901" uuid="e66751fe-5cbf-4a84-8fea-8ab3e6bc50db">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="555" y="218" width="1" height="901" uuid="c601ccd0-af1e-49ba-ae09-71ac45ce9420">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="20" y="217" width="1" height="901" uuid="c7a0158c-4e02-48ee-9f35-ce79f53f7328">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="190" y="217" width="1" height="901" uuid="831be268-adb5-4c85-9277-789d751c47eb">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="0" y="241" width="555" height="1" uuid="b1c325ee-acd3-477f-b50f-2f87aa3ab3c4">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="0" y="217" width="15" height="24" uuid="c26b7cf7-2e6e-43fd-942a-a1b82770f9ea">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[B.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="217" width="160" height="24" uuid="74ae72aa-2a13-43a8-9cd6-0b9761dd6c22"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Outflow(Rental Income)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="217" width="100" height="24" uuid="21818d8e-6ec3-45da-a257-d9e68ceba099"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="310" y="217" width="90" height="24" uuid="5afdc65d-7285-451a-97dc-b93511547e8b"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="217" width="145" height="24" uuid="d1aef7aa-c6ac-4e55-a7ea-60b661fe22d5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Remarks]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="283" width="555" height="1" uuid="f5b4728f-d0d8-499f-9f15-8ceca7a91d23">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="1" y="267" width="15" height="15" uuid="4946fbf6-5724-4828-970c-81911a160d71">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="267" width="160" height="15" uuid="bec0b5f5-d8f1-4201-8a30-849aff652409">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="267" width="100" height="15" uuid="1b6d519b-25a2-4800-9bcd-8ce210a68ea1">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="267" width="90" height="15" uuid="631928e1-1819-42e1-8435-b5b53ec366a5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="267" width="145" height="15" uuid="f173422a-9b97-4dfb-8fcc-9a5a7b893d05">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[$0% Released]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="284" width="145" height="15" uuid="9d79939f-cc32-474c-8c3d-f89631b3e07e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[$0% Released]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="284" width="90" height="15" uuid="1cf2217f-e06a-46a7-b328-49f9d8d6ce24">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="284" width="100" height="15" uuid="66e9c718-5c98-4476-a905-59e57fcd760a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="284" width="160" height="15" uuid="9204b4ca-3e11-409a-81ce-c6b02bacfeca">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="284" width="15" height="15" uuid="6923d088-f7e0-4f87-b3cb-981c1ba38e09">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[2]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="300" width="555" height="1" uuid="c99c6371-cc65-45cd-9bc1-3311de6e7922">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="411" y="301" width="145" height="15" uuid="337f870f-ea95-4c61-94ed-c8938946f376">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[$0% Released]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="301" width="90" height="15" uuid="55e4b305-1891-4fbe-94c9-0457aac188cb">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="301" width="100" height="15" uuid="4d6e0b48-ac94-49db-bc84-da4ae5aba9e4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="301" width="160" height="15" uuid="cefdabbe-fc42-4888-9d86-29b96476b8e5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="301" width="15" height="15" uuid="c54e7db1-025f-42ff-aa24-62897b245896">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[3]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="317" width="555" height="1" uuid="659b0f78-1420-413d-b793-cac5de74a799">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="411" y="318" width="145" height="15" uuid="cac4512b-1672-4237-ac5a-f5ecc4c9e7ad">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[$0% Released]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="318" width="90" height="15" uuid="b921515f-7a26-445c-b22c-ebbf6127330a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="318" width="100" height="15" uuid="8354a842-be43-4018-ae78-683da006a55e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="318" width="160" height="15" uuid="67f840a3-d752-4ca0-bf0c-3d6f78967dbb">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="318" width="15" height="15" uuid="99874fce-b172-43a6-8468-38aa64b24210">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[4]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="334" width="555" height="1" uuid="804cbaee-6888-4041-9e1a-e67297f03add">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="411" y="335" width="145" height="15" uuid="1f48f515-56e5-4d05-bbf6-916073cab122">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[$0% Released]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="335" width="90" height="15" uuid="6037d277-8866-4fba-b2e4-afe87a517693">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="335" width="100" height="15" uuid="45f3c10e-7b68-4e6d-a726-5ead0746ae18">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="335" width="160" height="15" uuid="36c34507-c9fe-4530-8175-f65256cc0bf6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="335" width="15" height="15" uuid="e86c399a-e2e2-4d3a-98c2-50bc75a7df1e">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[5]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="351" width="555" height="1" uuid="3812ed13-b947-499d-b845-797b626be99b">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="411" y="352" width="145" height="15" uuid="21de2d06-0c72-405e-b39d-ae00f21983f7">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[$0% Released]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="352" width="90" height="15" uuid="d709ded1-f440-4c4c-ab65-4c4f502b2263">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="352" width="100" height="15" uuid="19a81436-c5e7-486c-b1ab-9176148285ff">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="352" width="160" height="15" uuid="a164ce93-7c29-468b-be32-e04aa329a8fc">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="352" width="15" height="15" uuid="61219b36-81a6-4d26-a228-f99623e12e2d">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[6]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="368" width="555" height="1" uuid="37838d6a-80e2-4e26-a763-ce073a24238c">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="311" y="369" width="90" height="15" uuid="d86b49a2-f9f4-43b8-b349-1aed084d73c3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="369" width="160" height="15" uuid="b4972d1c-07b1-46c1-a9bb-e8bdc1adb602">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Total Satutory Payments]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="385" width="555" height="1" uuid="c4556140-e0d2-4b9f-9f8b-21b5dc68141c">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="0" y="409" width="555" height="1" uuid="3e050e5d-5a25-463d-8360-6f04796459b8">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="217" width="1" height="901" uuid="36e95cd9-0ae1-4832-956b-def914610b05">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="1" y="242" width="15" height="24" uuid="d80fed87-9d88-44a7-be97-218327b9e615">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[I.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="242" width="160" height="24" uuid="f3e0f736-1dda-4868-8930-38b1e3fae2ba"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Statutory Payments]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="267" width="555" height="1" uuid="bd7c7fff-d3e7-410c-868b-f7dc56675664">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="1" y="386" width="15" height="24" uuid="069bb2fa-12fd-46e8-8fa7-f51485c6f709">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[II.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="386" width="160" height="24" uuid="4f9eb1a6-66fc-4f02-9618-adfd7e62fa72"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[PDCS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="410" width="15" height="15" uuid="1d53d541-f76d-4df1-8230-9723e16b9c11">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[1]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="426" width="555" height="1" uuid="a58c3b60-55c0-44d0-9603-d28e22539081">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="31" y="410" width="160" height="15" uuid="e6eff76f-5136-45f7-82a1-dd94b223390f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="410" width="100" height="15" uuid="f4bd8f1d-4939-4797-a334-e879d2a1ac3c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="410" width="90" height="15" uuid="c3f237d5-5518-46db-90d3-ce32559df4d9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="410" width="145" height="15" uuid="d29373f7-915d-4509-bf42-1e2b107b4b61">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[$0% Released]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="427" width="145" height="15" uuid="1cdef344-2600-45fc-a9db-b2d2df2e711d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[$0% Released]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="427" width="90" height="15" uuid="b486d388-934f-4ccd-b0cc-af7d279fdabe">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="443" width="555" height="1" uuid="8fed7e62-7cb8-4992-9ebc-1bbef2f98741">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="201" y="427" width="100" height="15" uuid="d7e6547f-ff0e-4a7c-ae36-77283841c257">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="427" width="160" height="15" uuid="f21ce3f8-ae2a-4254-95df-276920bdf8e6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="427" width="15" height="15" uuid="80ea3e57-8f6d-4c50-9ea6-9a3fcae9c5a6">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="444" width="15" height="15" uuid="11c2d4fd-e9a0-4052-bcf2-815c653d9faf">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="444" width="160" height="15" uuid="b0c54692-606e-4fa1-891e-5f4e48ec7cdf">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="460" width="555" height="1" uuid="9772f0e0-69b8-43c1-a07f-2f775832bb22">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="201" y="444" width="100" height="15" uuid="b52b2ad1-e0cf-4e6c-86b2-e7721f890b3f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="444" width="90" height="15" uuid="00d8d958-a03b-4e76-bd11-334b0afda738">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="444" width="145" height="15" uuid="bb237773-1903-4a28-a98d-379b5759e6ad">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[$0% Released]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="461" width="90" height="15" uuid="280bb3e5-9f5b-454a-b748-3d214b16937d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="461" width="160" height="15" uuid="c6c1fe1e-d498-4f17-b6f4-1def839101d2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Total PDCS]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="477" width="555" height="1" uuid="89b4539d-db09-4273-b7f0-15be8d1f6fdd">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="0" y="501" width="555" height="1" uuid="99f22793-ac21-4512-903a-25144f918811">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="1" y="478" width="15" height="24" uuid="71c2e5e8-8462-4fc5-b8d2-918b8bce5bd7">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[III.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="478" width="160" height="24" uuid="7929a979-e73b-4331-a158-7d3ffe4abb4c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Priority Payments]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="502" width="15" height="15" uuid="51153801-6a8a-4fe8-995f-8d269337848e">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[1]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="518" width="555" height="1" uuid="c5baca88-5a17-41ef-8cb6-15a6f62ce4d2">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="31" y="502" width="160" height="15" uuid="78f4670e-05fb-44c9-9e75-d1a90b20c8ab">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="502" width="100" height="15" uuid="f44f6a6f-0cb8-4915-89c6-d025ce2844b4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="502" width="90" height="15" uuid="0e6650a5-1c4f-4c64-a196-9f47a7475bf0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="502" width="145" height="15" uuid="6e302a73-3b15-46c1-bab2-f6e07cd8f4df">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[$0% Released]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="519" width="145" height="15" uuid="f6d2687f-11e5-42a5-90dc-6c1b250eb492">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[$0% Released]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="519" width="90" height="15" uuid="370028f8-beec-4a13-8f6b-5d254d535778">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="535" width="555" height="1" uuid="f1b6c3a6-55cb-4449-8541-41b14e15abf2">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="201" y="519" width="100" height="15" uuid="9e762615-7a00-4e5d-895b-b9afb52fb051">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="519" width="160" height="15" uuid="3cfe5bb1-84c8-4144-b2b8-8ff7f4a17434">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="519" width="15" height="15" uuid="09bcde55-26f4-4c60-bcac-781cf2cdb85a">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="536" width="15" height="15" uuid="5dcc8856-f478-4967-a8a0-88eaa927744a">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="536" width="160" height="15" uuid="ab1a4a6b-3eee-4045-b826-2c9e156a9242">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="552" width="555" height="1" uuid="9a23ee7c-ae66-47af-ae59-667a89a721fa">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="201" y="536" width="100" height="15" uuid="94f50c6d-3230-410f-95b8-dd00776cebdf">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="536" width="90" height="15" uuid="684678a1-7f74-4e29-b2e9-c841721156e1">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="536" width="145" height="15" uuid="b3957e78-0be5-447e-a0d4-45877cc1df00">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[$0% Released]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="570" width="90" height="15" uuid="13e8d3f1-01f7-4fc8-aa53-5d65b15324d0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="570" width="160" height="15" uuid="54d8d9ec-9f7e-49f1-ab17-9b3ee6c3c015">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Total Priority Payments]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="586" width="555" height="1" uuid="dad93f48-d0d9-478e-858b-0ef42fd91536">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="1" y="553" width="15" height="15" uuid="6f17274c-aaba-43f0-968c-06a78621d8ab">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[4]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="569" width="555" height="1" uuid="0fc9d3dd-a782-4a23-bd89-8f242110a726">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="31" y="553" width="160" height="15" uuid="e6fdaa5b-5502-4a4c-a115-652600e5a707">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="553" width="100" height="15" uuid="efdec441-9a74-4c5d-931f-b85323ea8739">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="553" width="90" height="15" uuid="b1ee898e-3436-4125-86f4-ca84d2922f27">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="553" width="145" height="15" uuid="8c5219d0-9afb-4cd9-8614-83e69f3ef22e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[$0% Released]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="610" width="555" height="1" uuid="f07a0364-8107-461a-bb06-2186e8ae1b60">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="1" y="587" width="15" height="24" uuid="1106b1ce-3efe-4721-a839-dfbcc56f466f">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[IV.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="587" width="160" height="24" uuid="0b2b3f6f-1509-4ce5-84f7-e3348893db5c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Other Payments]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="651" width="555" height="1" uuid="0c48ad82-8a71-4d70-a9d4-9f6ced769135">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="31" y="635" width="160" height="15" uuid="11cfc4c3-d20e-4f97-a2c3-e57e9f1400c7">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Staff Salaries]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="668" width="555" height="1" uuid="26b96e32-d0dc-445a-b19e-d039644a068e">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="201" y="652" width="100" height="15" uuid="07bb4062-d690-4484-9bfd-41c0dc3e6687">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="652" width="39" height="15" uuid="0b0b48ad-17e9-4b72-b002-9972d8b7a6d6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Security]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="669" width="170" height="15" uuid="d821555f-43b9-4af9-bef1-7d835955b8f1">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Lower & Middle (Including Villa Staff)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="685" width="555" height="1" uuid="6b7af2ee-c911-4a20-9dac-e2cea1884ee9">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="201" y="669" width="100" height="15" uuid="01853ac8-6766-4c6b-bb68-4e2af12d6b03">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="703" width="160" height="15" uuid="77a771c4-e75d-4ee0-b9df-578c0b901882">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Social Insurance]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="719" width="555" height="1" uuid="1d3a06d9-d024-44c9-9c0e-9d56ee9f9562">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="0" y="702" width="555" height="1" uuid="54f5308e-7a24-4cd1-9326-d686b744bf31">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="150" y="686" width="38" height="15" uuid="716010e2-055f-4d3f-86c0-33b84f1c09d4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Others]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="686" width="100" height="15" uuid="869cfb9d-07c8-4277-b291-5023a78d8895">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="611" width="160" height="24" uuid="a52b3b58-6284-4de3-8853-f25e6184aaf1"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Salary & Related Costs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="611" width="15" height="24" uuid="ba5ca812-fa10-48eb-9cd1-bbaef09699d8">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="634" width="555" height="1" uuid="008ddb86-d46a-462c-935a-47b3b8c4db08">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="201" y="703" width="100" height="15" uuid="665bd58c-7df0-4afc-888e-dcbfebc71f05">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="720" width="120" height="15" uuid="3df5ab0c-2a26-4493-ad07-61e725ecb8f0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Total Salary & Allowances]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="736" width="555" height="1" uuid="e029d011-7612-4486-885d-efed06da257d">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="310" y="720" width="90" height="15" uuid="b5e47471-23ae-493e-89bb-bd6439ed3215">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="754" width="15" height="24" uuid="e235ecd2-0307-4ed4-bd3c-e0e7960671f0">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="754" width="160" height="24" uuid="bafce38e-0f93-438c-afc2-b1292f50ab2f"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Other Monthly Payments]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="777" width="555" height="1" uuid="ef20eb90-aaf8-4692-8a85-1376d1ae6129">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="31" y="778" width="160" height="15" uuid="5772d1be-a669-409d-9a9c-ef632daebd6e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="778" width="100" height="15" uuid="e8d1abfc-7d37-487e-acc3-c024b4a5ac7b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="778" width="145" height="15" uuid="3ac57fe5-d80f-4577-9c68-1127aa437a6e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[$0% Released]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="795" width="145" height="15" uuid="b11f83b6-ae8b-4f9e-8072-732becf79f9f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[$0% Released]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="811" width="555" height="1" uuid="40e4aaec-f1da-41c1-83cd-c70e68c170e3">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="201" y="795" width="100" height="15" uuid="283d562c-2a3e-4b88-8d91-8db2bc13e15c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="795" width="160" height="15" uuid="108ff671-5893-45b0-8a4d-f2eaa9e7abd3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="828" width="555" height="1" uuid="dc30f256-6263-4d53-b8f2-0fbb1b4bfa3c">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="31" y="812" width="160" height="15" uuid="2ce0085d-ad26-455c-b11a-cca76daa7277">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="812" width="100" height="15" uuid="09fd6ee8-be43-4cdf-a151-a3b7a377234c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="845" width="555" height="1" uuid="b8cb69b8-9377-430b-aed1-55909dc04877">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="201" y="829" width="100" height="15" uuid="6d859ef2-c2cc-4593-833e-63740e14d08c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="829" width="160" height="15" uuid="7229a0a5-5638-457a-8a0d-caee6bd6c916">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="753" width="555" height="1" uuid="008d921f-ab42-44eb-a01e-a7151e215c6f">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="31" y="846" width="160" height="15" uuid="1af858dc-64a6-4842-a147-1537a76b7529">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="846" width="100" height="15" uuid="d8a45325-3075-4db9-a5b3-35d69f7573f7">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="879" width="555" height="1" uuid="0138c16a-ec57-47a6-bb94-867a33091fed">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="201" y="863" width="100" height="15" uuid="ceb5431b-a2bc-441a-ac6b-6ec8827050b3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="863" width="160" height="15" uuid="dd0bc8f7-bd8e-462c-abf9-a0ddfe877ebe">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="896" width="555" height="1" uuid="786fd3f2-c3be-4e19-b464-5f7d898511f2">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="31" y="880" width="160" height="15" uuid="f9ddf0ca-597c-453e-821f-525d4ff006c6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="880" width="100" height="15" uuid="7987ee4a-9868-4cb6-b130-1a066f0dbf0d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="913" width="555" height="1" uuid="e183f13c-8c2f-456c-b8b7-71911376e4ae">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="201" y="897" width="100" height="15" uuid="cae6c7cb-f1ce-4481-8e2e-685a699d3387">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="897" width="160" height="15" uuid="708ae054-b091-4134-b0f2-de912503a03e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="914" width="160" height="15" uuid="278aa78d-83de-4d90-a038-2840550c020a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="914" width="100" height="15" uuid="134494c2-bc0d-4a05-a1b3-e274fedebf8e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="947" width="555" height="1" uuid="643bdf26-72c1-47bf-aee1-3585d6b0bba6">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="201" y="931" width="100" height="15" uuid="9c9153cd-795b-4ef0-8209-03544a9144bd">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="931" width="160" height="15" uuid="fa59267d-351b-4a7e-8398-98c8e7158079">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="964" width="555" height="1" uuid="a033abfe-2e32-430a-963e-f5e9ac15e90e">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="31" y="948" width="160" height="15" uuid="4e889d1c-55c1-4afd-b9b1-164817da3746">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="948" width="100" height="15" uuid="3b95afb5-40d2-4318-a4e3-ff0be171276d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="981" width="555" height="1" uuid="22d88b3c-7093-4fb0-8863-d98954fef51d">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="201" y="965" width="100" height="15" uuid="14efa1c4-7586-45fa-92af-e2f8e4043adf">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="965" width="160" height="15" uuid="1e1f7dbe-988b-416b-b56a-235d6b431b9e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="982" width="160" height="15" uuid="3e08d991-194d-4770-b3c9-274e85cab920">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="982" width="100" height="15" uuid="7a1da06e-f698-4439-905b-560217faa27c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="1015" width="555" height="1" uuid="d07e7966-70db-4db8-9a02-6752581bcf18">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="201" y="999" width="100" height="15" uuid="c376499d-f001-436e-a496-6b1b243ec474">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="999" width="160" height="15" uuid="8d45839f-7d4c-4d8a-ad8e-953dd99f547f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="1032" width="555" height="1" uuid="4ae2750c-3b41-4c04-a1b7-9a0796ef5e67">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="31" y="1016" width="160" height="15" uuid="062b8dc6-182f-4c68-97ea-a0b93f5f3f16">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="1016" width="100" height="15" uuid="66eb0add-5b87-43a1-bec3-d37d10040a57">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="1049" width="555" height="1" uuid="9421a4bb-81a2-42a8-86ce-d2a5da68e90f">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="201" y="1033" width="100" height="15" uuid="52db7b6e-da17-45ea-b0b3-c5cba1747eb7">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="1033" width="160" height="15" uuid="c623a8bc-6c45-453a-aff3-d3b1f51ed01e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Al Araimi Boulerd]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="861" width="555" height="1" uuid="a31cf24b-8379-4600-9a83-06fbd0298db8">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="0" y="929" width="555" height="1" uuid="d99cc1ab-fa23-4766-9e00-252e4f81c483">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="1" y="997" width="555" height="1" uuid="ec609a7e-034f-4f51-95fb-64dafecec4bb">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="0" y="1066" width="555" height="1" uuid="4d15ffed-95a7-4b5e-8b70-cbb5a92844a5">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="31" y="1067" width="160" height="15" uuid="56d5900d-4c1c-4969-b8b5-302d9e9bdc5f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Total Other Monthly Payments]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="310" y="1067" width="90" height="15" uuid="303cffa5-2f8d-450e-be8e-979254a832a3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="1083" width="555" height="1" uuid="db61a426-398e-425a-857a-4c613e74aa93">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="0" y="1101" width="555" height="1" uuid="29d532da-d7fe-49d2-ab64-d5bdb230f013">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="31" y="1102" width="160" height="15" uuid="06ec8e51-4368-4f73-80e4-a29c8a6c47d5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Outflow (B)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="310" y="1102" width="90" height="15" uuid="2a26e239-2f16-4477-a282-e6e83ad6c3f0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="1118" width="555" height="1" uuid="09f1eb05-cac6-4704-935c-d4d7c3f98d3c">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="0" y="1156" width="555" height="1" uuid="5f429381-0703-4c11-bdd8-46cf373bf36e">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="31" y="1140" width="160" height="15" uuid="115c3b53-d134-410e-ab08-70aa3d408de3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Surplus / (Deficit)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="310" y="1140" width="90" height="15" uuid="74015e6a-3071-46ef-8367-46197f431e5e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[197,908.000]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="1139" width="555" height="1" uuid="d990aea6-791c-463a-a6e4-f690410483d7">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="1140" width="1" height="17" uuid="8a518f3f-1d71-4a26-9f07-2e107b0077f6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="554" y="1139" width="1" height="17" uuid="6040ebf8-8d9c-4726-a17a-9bca57a57d9e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="200" y="1140" width="100" height="15" uuid="5c8ee50d-5bd5-4dd3-9a1f-b8d8bc3e591c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[(A) - (B)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="794" width="555" height="1" uuid="f378af37-d153-4d98-aa47-dccc96cd433a">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+		</band>
+	</detail>
+	<noData>
+		<band height="119">
+			<staticText>
+				<reportElement x="24" y="10" width="506" height="109" forecolor="#CC0000" uuid="5f633ef2-81c7-4043-a590-01aa22826f20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No records found !!]]></text>
+			</staticText>
+		</band>
+	</noData>
+</jasperReport>

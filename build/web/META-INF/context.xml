@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/Arete-Iconic">
+    <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" initialSize="0" maxActive="20" maxIdle="8" maxWait="10000" minIdle="0" name="jdbc/arete_tms" password="root" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/arete_tms" username="root"/>
+</Context>

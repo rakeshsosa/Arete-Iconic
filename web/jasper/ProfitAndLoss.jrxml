@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.0.final using JasperReports Library version 5.5.2  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ProfitAndLoss" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c9b953fc-17a7-4156-ae2b-166dcd628e79">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[select * from arete_tms.report_sub_ledger]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="10" width="555" height="50" backcolor="#95B4D7" uuid="4837a496-affe-4288-884f-97bb7ffadbb0">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="10" y="10" width="159" height="30" forecolor="#FFFFFF" uuid="bcf98abb-5396-4681-8bd3-73701a184036"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Company Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="20" width="154" height="30" forecolor="#FFFFFF" uuid="4de75bfb-e40c-416e-ad92-3a8c8c0418e1"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Profit and Loss Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="40" width="150" height="20" forecolor="#FFFFFF" uuid="37a7f349-e161-4b13-81b5-4bb36a19eea0"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Address : Oman]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="49" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="24" width="555" height="25" backcolor="#5081BC" uuid="66e63ffe-7fb7-425e-b83f-886f1ef30640">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="2" y="25" width="207" height="24" forecolor="#FFFFFF" uuid="aafa2294-bff1-4a37-a942-0c00d346b522"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Profit and Loss Report]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="49" splitType="Stretch">
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="0" y="16" width="314" height="20" forecolor="#FFFFFF" backcolor="#5081BC" uuid="7e451c20-c4c4-4f92-8c93-30926821c87e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ PARTICULARS]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement mode="Opaque" x="315" y="16" width="240" height="20" forecolor="#FFFFFF" backcolor="#5081BC" uuid="f26bf7fa-c9cb-48c7-8539-1f44f5984f78"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="36" width="555" height="1" uuid="b891ebd0-99b2-4497-8429-14e48ee7f559">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="16" width="555" height="1" uuid="a037cfef-3fdb-4cb2-ad3f-1493c90a184a">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="16" width="1" height="21" uuid="b8f197a0-e9cd-4277-b33f-bf817f71bb4d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="314" y="16" width="1" height="20" uuid="3c2504a0-3be9-4542-892e-3f4f2d738dd6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="555" y="16" width="1" height="21" uuid="3bb39b8c-df36-4ec0-b7ac-b039113d7e8a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="395" splitType="Stretch">
+			<line>
+				<reportElement x="314" y="-9" width="1" height="384" uuid="8e243807-46d5-440b-98ae-da3f79076b69">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="555" y="-9" width="1" height="224" uuid="cdb8e686-da2b-45a7-909d-5fda361727af">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="0" y="77" width="314" height="20" forecolor="#FFFFFF" backcolor="#5081BC" uuid="cba6df67-a573-4195-8011-0d7bcd406534"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ Direct Expenses]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="315" y="77" width="240" height="20" forecolor="#FFFFFF" backcolor="#5081BC" uuid="f6e39645-b0a2-4160-98d3-f54c85b1ad95"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="315" y="98" width="240" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="44010611-3452-4d6c-ad6f-a6c5fee10e36"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ 11,250]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="0" y="98" width="314" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="536b0d68-cbc2-48a4-abb9-2649f4d4f74e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ Operative Expenses]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="0" y="119" width="314" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="f8f69c11-ca22-4b63-8dda-569d6975ed6e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ Munipality Charges paid]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="315" y="119" width="240" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="365e8214-5b2f-40eb-9257-0c09974ba7c8"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ 491]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="315" y="161" width="240" height="20" forecolor="#000000" backcolor="#DCE6F2" uuid="926f17f0-fefd-44db-bca0-9a1ead665d89"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ 141,646]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="1" y="160" width="313" height="21" forecolor="#000000" backcolor="#DCE6F2" uuid="13ab12e4-6f3f-4ade-b443-9ee992622ad4"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ Gross Profit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="315" y="140" width="240" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="71079fc1-6891-4bdb-8d46-d3760f32e283"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ 11,741]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="0" y="140" width="314" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="ed0ec58c-dc81-4997-98b7-095f832b21ef"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ Total Direct Expenses]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="0" y="-9" width="314" height="20" forecolor="#FFFFFF" backcolor="#5081BC" uuid="fd994377-d476-4180-84b6-0681bf217e5b"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ Income]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="11" width="555" height="1" uuid="c4b88bc4-8f68-4c31-9cd7-b6db58d13842">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="315" y="-9" width="240" height="20" forecolor="#FFFFFF" backcolor="#5081BC" uuid="feec8d7e-f2ea-4f1f-9cb4-1c8e2884e00f"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="-9" width="1" height="384" uuid="8db2289b-d7dd-4dd5-954c-22553d9b0139">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="555" y="-8" width="1" height="383" uuid="b4641238-5877-4b1b-ad3e-7f678350db3d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="-10" width="555" height="1" uuid="86048a1d-9d06-4c05-b891-7f5a7f1618cd">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="33" width="555" height="1" uuid="f7c86477-5d4a-4534-b22b-554657d72dc7"/>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="119" width="555" height="1" uuid="ace165cf-fcb0-43da-9323-e4b2fc8c0a66"/>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="12" width="555" height="1" uuid="ddf253bd-446c-4140-a2f9-3eb71a663313"/>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="1" y="13" width="313" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="b8e82800-d6bb-4220-bd1d-f356ea000cb9"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ Rental Income]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="315" y="13" width="239" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="3b30238e-430c-4ec3-9195-96c5dff93c19"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ 153,357]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="181" width="555" height="1" uuid="f49802b4-6619-468a-8113-a8dbff84c605"/>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="54" width="555" height="1" uuid="2e5b6173-49d6-4fc4-b891-f5f8fd4bf180"/>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="315" y="34" width="239" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="d6409d12-9632-4566-b9fe-79094bc729cb"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ -]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="1" y="34" width="313" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="c63626e3-2863-4514-a397-b77af9acad2d"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ Rental Waivers and Other Adjustments]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="76" width="555" height="1" uuid="f817376d-3138-4a2e-8fbb-781c8a83ed1b"/>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="1" y="55" width="313" height="21" forecolor="#000000" backcolor="#DCE6F2" uuid="a25beae4-4d99-4755-8e46-cf9137bdda88"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ Gross Income]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="315" y="55" width="240" height="21" forecolor="#000000" backcolor="#DCE6F2" uuid="1ddfecdb-f926-40b4-ae06-074cab9db589"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ 153,357]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="1" y="182" width="313" height="20" forecolor="#FFFFFF" backcolor="#5081BC" uuid="5d17526a-916a-4549-ad61-ecf7b258082b"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ Expenses]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="315" y="182" width="241" height="20" forecolor="#FFFFFF" backcolor="#5081BC" uuid="cdecda2c-c02a-4ad5-92cf-3f8e10236bf6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="315" y="203" width="240" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="474ab5fd-71bb-4cbb-a3db-8ce7fcbd8043"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ 11,250]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="1" y="203" width="313" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="4f392c80-7a2e-4217-9d1a-ca96171343d9"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ Employee Costs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="1" y="224" width="313" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="849815f9-ffc7-4015-934a-70ca8cbd5bb8"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ Administrative Expenses]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="315" y="224" width="240" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="309ee0ca-1e11-434a-a863-c04f4b7a6a5e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ 491]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="315" y="288" width="240" height="21" forecolor="#000000" backcolor="#DCE6F2" uuid="cc031031-454f-454c-b4da-feb22be03f48"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ 141,646]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="1" y="288" width="313" height="21" forecolor="#000000" backcolor="#DCE6F2" uuid="c7f304e7-0e98-4c5d-b6d6-932f968efa0d"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ Profit / (Loss) From Operations]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="265" width="555" height="1" uuid="6bddb974-5a77-464f-8f31-7529bac3b411">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="315" y="245" width="240" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="dcaf2eed-8f94-4bfb-ae90-51c55a1a21f6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ 11,741]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="2" y="245" width="312" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="5ad5a208-0366-4076-9c87-a23dc61c5f4e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ Facility Management Expenses]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="224" width="555" height="1" uuid="e13a843f-51fd-4dc4-9da6-e5b8710fc7e1"/>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="1" y="309" width="555" height="1" uuid="5ff400ce-6354-448c-a15b-9b4d5f972d11"/>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="1" y="287" width="555" height="1" uuid="48c88758-e1b3-4d0a-8e29-000b8a6c2811">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="315" y="266" width="240" height="21" forecolor="#000000" backcolor="#FFFFFF" uuid="a07d3032-5d0c-458a-a462-fe8c3bf80b38"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ 11,741]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="1" y="267" width="313" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="11055203-b541-4d4c-8e2f-b1514b55147a"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ Total Expenses]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="315" y="353" width="240" height="21" forecolor="#000000" backcolor="#DCE6F2" uuid="9c96900f-36fa-4a12-9018-927e1aed87c4"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ 141,646]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="1" y="353" width="313" height="21" forecolor="#000000" backcolor="#DCE6F2" uuid="c8f71ee3-d997-4462-9bb6-53c2e206e037"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ Net Profit / (Loss)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="330" width="555" height="1" uuid="4d8c472c-f9bc-4f3a-b4ba-9b7fbbaf7f4e">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="315" y="310" width="240" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="966c563b-3292-4fe1-80ad-32bdef6f1366"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ 11,741]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="1" y="310" width="313" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="d708bbdc-27e7-4137-9d4f-5af744c08741"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ Depreciation]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="374" width="555" height="1" uuid="5634739e-ceeb-4583-b669-696f1ab7d726"/>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="352" width="555" height="1" uuid="f0f7636c-064d-4155-8e05-8b9b1fd3bbcc">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="315" y="332" width="240" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="6199c180-63b4-42dc-b5ca-92bd82274324"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ 11,741]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="1" y="332" width="313" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="90dda962-8237-4740-9a5b-bf23991444bf"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ Intrest and Bank Charges]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="140" width="555" height="1" uuid="aeaedc63-aef9-4fc1-a05d-22fd91e2bff7"/>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="1" y="160" width="555" height="1" uuid="8fa29c53-fcda-4b4b-8da9-0f99a8f7c5de"/>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="1" y="245" width="555" height="1" uuid="2e6cd0bd-7095-4ff8-bf48-2e67c9cf9e57"/>
+				<graphicElement>
+					<pen lineColor="#CBCBCB"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<noData>
+		<band height="119">
+			<staticText>
+				<reportElement x="24" y="10" width="506" height="109" forecolor="#CC0000" uuid="0a681a2c-6c1f-4681-bde5-b96ff510325b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No records found !!]]></text>
+			</staticText>
+		</band>
+	</noData>
+</jasperReport>

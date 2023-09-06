@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.0.final using JasperReports Library version 5.5.2  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BalanceSheet" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="18d75225-8da9-4a7f-9d41-d3e9a55d2788">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[select * from arete_tms.report_sub_ledger]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="110" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<rectangle>
+				<reportElement x="0" y="10" width="555" height="100" backcolor="#F2F6FB" uuid="350111ae-c9e1-40f6-833e-3f42af6557e0">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="1" y="21" width="358" height="26" forecolor="#0A4762" uuid="eb6ad4cd-92df-467f-ada7-ea57ad9ce5c7">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ Al Arami Properties]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="47" width="354" height="26" forecolor="#0A4762" uuid="c6b90a28-6aeb-4af7-be96-90dd3b614c91">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ Balance Sheet]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="10" y="73" width="347" height="26" forecolor="#0A4762" uuid="2e369f3b-b765-4b86-aca7-4553c0e7c9f8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="411" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<rectangle>
+				<reportElement x="1" y="0" width="554" height="410" backcolor="#F2F6FB" uuid="9c9975e3-dccf-4dbe-bb7f-5a333bba9014">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="279" height="20" forecolor="#0A4762" uuid="b3d5a2ae-1d30-4bee-8d43-33444a1e941c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[ ASSETS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="22" width="279" height="18" forecolor="#000000" uuid="4a7b3140-2bf8-46b2-b2ae-40131ab2ba18">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[ Non-Current Assets]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="43" width="120" height="18" forecolor="#000000" uuid="9379c9c6-5a7e-42d6-8a5a-b8d1574f5f45">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Land]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="64" width="120" height="18" forecolor="#000000" uuid="dab0dc74-f82a-430a-8bc5-e43513cec996">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Building]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="88" width="139" height="18" forecolor="#000000" uuid="c3dca853-d19a-4bb6-89c7-ac6a921f928f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Total Non-Current Assets]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="44" width="69" height="18" forecolor="#000000" uuid="5a7e861d-e782-4a82-9956-8271f8c2515c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[9,808,000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="65" width="69" height="18" forecolor="#000000" uuid="225289b1-a2c3-49ee-b906-e9e61845a7fa">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[9,808,000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="88" width="69" height="18" forecolor="#000000" uuid="45430682-d9c4-440a-b554-837736d02d4d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[9,808,000]]></text>
+			</staticText>
+			<line>
+				<reportElement x="204" y="106" width="75" height="1" uuid="3181c1d4-8563-490e-bf82-7cd6c0705581">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="204" y="88" width="75" height="1" uuid="3b535bba-0d3d-4b96-b0b7-95c9c1b9670f">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="1" y="116" width="279" height="18" forecolor="#000000" uuid="eb158792-4a72-4787-b24f-9affe3f079f2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[ Current Assets]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="137" width="178" height="18" forecolor="#000000" uuid="88fa8cd0-e02c-4b11-b5ff-9b35a877b020">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Cash and Bank Balances]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="211" y="138" width="69" height="18" forecolor="#000000" uuid="7c27a399-b546-49d3-bfe0-9f9c248a84fb">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="158" width="178" height="18" forecolor="#000000" uuid="a94239ba-78be-47da-b217-6bdce2b7f775">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Account Receivable]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="204" width="140" height="18" forecolor="#000000" uuid="84bac1a4-c314-40f0-89b3-37beef374413">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Total Current Assets]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="211" y="159" width="69" height="18" forecolor="#000000" uuid="038c050b-1d70-46e4-9e07-e69b1d02d7b5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[9,808,000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="211" y="204" width="69" height="18" forecolor="#000000" uuid="9d036acb-c4f6-4b09-ad68-3f2396f0bcff">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[9,808,000]]></text>
+			</staticText>
+			<line>
+				<reportElement x="205" y="204" width="75" height="1" uuid="8c0c42ad-e08f-47d8-820a-90a3980879ef">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="205" y="222" width="75" height="1" uuid="a2ff9a09-9149-472d-b7ac-09b65fd25e0e">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="11" y="179" width="178" height="18" forecolor="#000000" uuid="8127e8a5-baa3-4c3c-9c15-c1b108064282">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Prepaid Taxes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="211" y="180" width="69" height="18" forecolor="#000000" uuid="46b398d5-993f-439b-85cb-1270ea5965cd">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[9,808,000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="223" width="160" height="18" forecolor="#000000" uuid="96df1830-f466-4022-912c-77d23131dbeb">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[ Total Assets]]></text>
+			</staticText>
+			<line>
+				<reportElement x="205" y="241" width="75" height="1" uuid="21460d5c-e3d9-4914-b13c-435a6732f74b">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="211" y="223" width="69" height="18" forecolor="#000000" uuid="3a37ed5b-133b-40f3-a351-86f010dfc732">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[9,808,000]]></text>
+			</staticText>
+			<line>
+				<reportElement x="205" y="244" width="75" height="1" uuid="a543f0e5-17cf-4d66-add0-f1814f1d9a80">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="282" y="0" width="272" height="20" forecolor="#0A4762" uuid="a753ffdb-ba3b-4a01-9ae9-a496bb5cde09">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[ LIABILITIES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="282" y="23" width="270" height="18" forecolor="#000000" uuid="258eb434-6812-4ca4-8684-2a00518d7a2e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[ Non-Current Liabilities]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="44" width="103" height="18" forecolor="#000000" uuid="1fa88554-b833-46a1-955f-b4607d3c184b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Bank Loans]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="491" y="45" width="62" height="18" forecolor="#000000" uuid="15a2236f-833e-4508-8bff-077913d44951">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[9,808,000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="282" y="68" width="270" height="18" forecolor="#000000" uuid="8b7b1c43-6ffd-4718-a572-bd32e17ae5fa">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[ Current Liabilities]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="89" width="103" height="18" forecolor="#000000" uuid="c8a41528-9f6c-4a28-a683-9eca48d83c51">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Account Payable]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="491" y="90" width="62" height="18" forecolor="#000000" uuid="4f98dbaf-d3b6-438d-a15c-94bdf26337f8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[9,808,000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="491" y="111" width="62" height="18" forecolor="#000000" uuid="ecda19f4-4cc5-44ad-8a70-e78a31de0c42">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[9,808,000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="110" width="103" height="18" forecolor="#000000" uuid="a1889bde-6284-4899-ac59-389624090c98">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Other Payables]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="310" y="133" width="150" height="18" forecolor="#000000" uuid="17a0b8c1-9426-469a-a2f3-16dc774bd709">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Total Current Liabilities]]></text>
+			</staticText>
+			<line>
+				<reportElement x="477" y="133" width="75" height="1" uuid="5f6bbeb3-a4a3-45ee-bb2b-c6e5c6f5a834">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="482" y="133" width="69" height="18" forecolor="#000000" uuid="c083ab9c-fa66-4637-8141-09b5e1a80c02">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[9,808,000]]></text>
+			</staticText>
+			<line>
+				<reportElement x="477" y="151" width="75" height="1" uuid="251b4507-9648-4367-843f-34e5c3c10658">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="310" y="239" width="130" height="18" forecolor="#000000" uuid="e92fc88c-3e55-464e-8867-e7a700a3f376">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Total Equity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="491" y="239" width="62" height="18" forecolor="#000000" uuid="7639cd97-46a2-496e-a511-e949353470db">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[9,808,000]]></text>
+			</staticText>
+			<line>
+				<reportElement x="486" y="239" width="68" height="1" uuid="9ea8e932-b1c9-416d-b401-c448a2469639">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="486" y="258" width="68" height="1" uuid="beb2ac25-01bd-4f71-a587-5d33acff250d">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="491" y="219" width="61" height="18" forecolor="#000000" uuid="5b37c9fa-d16a-4ad0-a0b4-8386901b7362">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[9,808,000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="291" y="218" width="178" height="18" forecolor="#000000" uuid="019722ad-550e-4745-a754-f35ca0741a45">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Accumulated Profit / Loss]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="291" y="197" width="178" height="18" forecolor="#000000" uuid="0edc9d78-3d88-4e0e-a827-10b8fb0cae28">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Legal Reserve]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="291" y="176" width="178" height="18" forecolor="#000000" uuid="5165f968-b968-4c2f-8d56-597354d49a0c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Proprietors Account]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="491" y="198" width="63" height="18" forecolor="#000000" uuid="9b40049d-a8ab-43ec-a18c-3967d8a231fe">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="282" y="261" width="153" height="18" forecolor="#000000" uuid="0ef3bd42-1c75-4ec8-a2cf-587d032bf70f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[ Total Equity and Liabilities]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="485" y="262" width="69" height="18" forecolor="#000000" uuid="ce0a2aee-6053-4643-beaa-c1ea67081eb4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[9,808,000]]></text>
+			</staticText>
+			<line>
+				<reportElement x="480" y="285" width="75" height="1" uuid="1da2c1a3-8ebf-497c-9b53-7d8f51e056a9">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="480" y="283" width="75" height="1" uuid="e07c166c-2f36-486a-b509-23066c3fbffd">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="282" y="154" width="274" height="20" forecolor="#0A4762" uuid="8068ef75-1724-48b6-8e36-c946f69d50d2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[ EQUITY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="491" y="177" width="63" height="18" forecolor="#000000" uuid="38cb9992-a533-407a-bedc-e732ef2d15cf">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[-]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<noData>
+		<band height="120">
+			<staticText>
+				<reportElement x="24" y="10" width="506" height="109" forecolor="#CC0000" uuid="7e0a4c15-6f46-4e42-9f72-7edc687d55c2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No records found !!]]></text>
+			</staticText>
+		</band>
+	</noData>
+</jasperReport>
