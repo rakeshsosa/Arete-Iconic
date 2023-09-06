@@ -77,6 +77,7 @@ public class AssetsController {
     //================= To Fetch Depreciation Details ========================
     @RequestMapping("/assetsm/depreciationList.htm")
     public ModelAndView depreciationList(HttpServletRequest request, HttpServletResponse response) throws ParseException, IOException, HibernateException, SQLException {
+        System.out.println("Hello world!");
         ModelMap modelMap = new ModelMap();
         modelMap.addAttribute("depreciationList", assetsDAO1.depreciationList());
         return new ModelAndView("../assets/depreciationList1", modelMap);
